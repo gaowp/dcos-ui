@@ -9,12 +9,19 @@ import ScrollbarUtil from "../utils/ScrollbarUtil";
 import SidebarToggle from "../components/SidebarToggle";
 import TemplateUtil from "../utils/TemplateUtil";
 
-const PageHeader = ({ actions, addButton, breadcrumbs, tabs }) => {
+const PageHeader = ({
+  actions,
+  addButton,
+  breadcrumbs,
+  supplementalContent,
+  tabs
+}) => {
   return (
     <BasePageHeader
       actions={actions}
       addButton={addButton}
       breadcrumbs={breadcrumbs}
+      supplementalContent={supplementalContent}
       tabs={tabs}
     />
   );

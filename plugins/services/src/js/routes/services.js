@@ -3,7 +3,6 @@ import { Redirect, Route, IndexRoute } from "react-router";
 import React from "react";
 /* eslint-enable no-unused-vars */
 
-import DeploymentsTab from "../pages/services/DeploymentsTab";
 import ServicesContainer from "../containers/services/ServicesContainer";
 import NewCreateServiceModal from "../components/modals/NewCreateServiceModal";
 import ServicesPage from "../pages/ServicesPage";
@@ -337,12 +336,6 @@ const serviceRoutes = [
             ]
           }
         ]
-      },
-      {
-        type: Route,
-        path: "deployments",
-        component: DeploymentsTab,
-        isInSidebar: true
       }
     ]
   }
