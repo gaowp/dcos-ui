@@ -3,7 +3,6 @@ import {
   JSONParser as constraints
 } from "./serviceForm/JSONReducers/Constraints";
 import { JSONParser as container } from "./serviceForm/Container";
-import { JSONParser as containers } from "./serviceForm/Containers";
 import {
   JSONParser as environmentVariables
 } from "./serviceForm/JSONReducers/EnvironmentVariables";
@@ -36,7 +35,6 @@ module.exports = [
   simpleParser(["cmd"]),
   constraints,
   container,
-  containers,
   environmentVariables,
   externalVolumes,
   fetch,
@@ -46,6 +44,6 @@ module.exports = [
   networks,
   portDefinitions,
   portMappings, // Note: must come after portDefinitions, as it uses its information!
-  residency,
-  requirePorts
+  requirePorts,
+  residency
 ];
